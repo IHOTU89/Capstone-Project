@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAGIVATION BAR</title>
+</head>
+<body>
+    <div  class="topnav">
+          <a  class="active" href="#home"></a>
+          <a  href="#about-us">about us</a>
+          <a  href="#gallary">gallary</a>
+          <a href="contact-us">contact us</a>
+    </div>
+    <section>
+      <img class="myslides" src="OIP (1).jpg" style="height: 500px;">
+       <img class="myslides" src="OIP (2).jpg" style="height: 500px;">
+       <img class="myslides" src="OIP .jpg" style="height: 500px;>
+    </section>
+  <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("myslides");
+
+            for (i=0; i<x.length; i++){
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            
+            x[myIndex-1].style.display = "block"
+            setTimeout(carousel, 3000);
+        }
+
+    </script>   
+
+    
+        
+</body>
+</html>
