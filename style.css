@@ -1,0 +1,25 @@
+body{
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.topnav{
+    overflow: hidden;
+     background-color: orchid;
+     text-align: center;
+}
+  .topnav a{
+    float: left;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .topnav a.active{
+    background-color: rgb(94, 34, 190);
+    color: navy;
+  }
+  .topnav a:hover{
+    background-color: mediumvioletred;
+    color: slateblue;
+  }

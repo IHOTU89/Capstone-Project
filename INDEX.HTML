@@ -8,35 +8,50 @@
 </head>
 <body>
     <div  class="topnav">
-          <a  class="active" href="#home"></a>
-          <a  href="#about-us">about us</a>
-          <a  href="#gallary">gallary</a>
-          <a href="contact-us">contact us</a>
+          <a  class="active" href="INDEX.HTML">home</a>
+          <a  href="aboutus.html">about us</a>
+          <a  href="gallary.html">gallary</a>
+          <a href="contactus.html">contact us</a>
     </div>
-    <section>
+    <section> <center>
       <img class="myslides" src="OIP (1).jpg" style="height: 500px;">
        <img class="myslides" src="OIP (2).jpg" style="height: 500px;">
        <img class="myslides" src="OIP .jpg" style="height: 500px;>
+       </center>
+       <div>
+        <footer>
+            <p>wbiste creator is zoe</p>
+            </footer>
+        </div>
     </section>
   <script>
-        var myIndex = 0;
-        carousel();
+       var myIndex = 0;
 
-        function carousel(){
-            var i;
-            var x = document.getElementsByClassName("myslides");
+      carousel();
 
-            for (i=0; i<x.length; i++){
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) {myIndex = 1}
-            
-            x[myIndex-1].style.display = "block"
-            setTimeout(carousel, 3000);
-        }
+       function carousel() {
 
-    </script>   
+         var i;
+
+         var x = document.getElementsByClassName("myslides");
+
+         for (i = 0; i < x.length; i++) {
+
+          x[i].style.display = "none";
+
+                     }
+
+           myIndex++;
+
+         if (myIndex > x.length) { myIndex = 1 }
+
+        x[myIndex - 1].style.display = "block"
+
+         setTimeout(carousel, 3000);
+
+          }  
+          </script>
+     
 
     
         
